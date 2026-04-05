@@ -1,4 +1,4 @@
-#STEP1 - Data Cleaning
+# STEP 1 - Data Cleaning
 
 import pandas as pd
 
@@ -33,7 +33,8 @@ df = df.fillna(0)
 print("Cleaned Data:")
 print(df.head())
 
-#STEP2 - EDA (Exploratory Data Analysis)
+
+# STEP 2 - EDA (Exploratory Data Analysis)
 
 # Total murders per year
 yearly_murder = df.groupby('year')['murder'].sum()
@@ -48,7 +49,8 @@ print("\nYearly Murder Trend:\n", yearly_murder)
 print("\nTop States:\n", top_states)
 print("\nTop Districts:\n", top_districts)
 
-#STEP3 - Visualization
+
+# STEP 3 - Visualization
 
 import matplotlib.pyplot as plt
 
@@ -79,7 +81,8 @@ plt.title("Crime Distribution")
 plt.ylabel("")
 plt.show()
 
-#STEP4 - Statistical Analysis
+
+# STEP 4 - Statistical Analysis
 
 print("Mean:", df['murder'].mean())
 print("Median:", df['murder'].median())
@@ -87,11 +90,11 @@ print("Variance:", df['murder'].var())
 print("Standard Deviation:", df['murder'].std())
 
 
-#STEP5 - Creativity
+# STEP 5 - Creativity
 
-#Correlation Heatmap
 import seaborn as sns
 
+# Correlation Heatmap
 plt.figure()
 corr = df[['murder','rape','robbery','theft']].corr()
 
@@ -99,7 +102,7 @@ sns.heatmap(corr, annot=True, cmap='coolwarm')
 plt.title("Crime Correlation Matrix")
 plt.show()
 
-#Crime Growth Over Time
+# Crime Growth Over Time
 growth = df.groupby('year')['total_ipc_crimes'].sum()
 
 plt.figure()
@@ -110,10 +113,59 @@ plt.ylabel("Total Crimes")
 plt.grid()
 plt.show()
 
-#Box Plot
-import seaborn as sns
-
+# Box Plot (Outliers)
 plt.figure()
 sns.boxplot(data=df[['murder','rape','robbery','theft']])
 plt.title("Outlier Detection in Crime Data")
 plt.show()
+
+
+# STEP 6 - Prediction using Linear Regression
+
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import r2_score, mean_absolute_error
+
+# Features
+X = df[['rape', 'robbery', 'theft']]
+
+# Target
+y = df['murder']
+
+# Split
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
+
+# Model
+model = LinearRegression()
+model.fit(X_train, y_train)
+
+# Prediction
+y_pred = model.predict(X_test)
+
+# Results
+print("\nPredicted vs Actual:\n")
+for i in range(5):
+    print(f"Predicted: {y_pred[i]:.2f}, Actual: {y_test.iloc[i]}")
+
+# Evaluation
+print("\nR2 Score:", r2_score(y_test, y_pred))
+print("MAE:", mean_absolute_error(y_test, y_pred))
+
+# Graph (Actual vs Predicted)
+plt.figure()
+plt.scatter(y_test.values, y_pred)
+plt.xlabel("Actual Murder Cases")
+plt.ylabel("Predicted Murder Cases")
+plt.title("Actual vs Predicted (Linear Regression)")
+plt.grid()
+plt.show()
+
+# Coefficients with feature names
+print("\nModel Coefficients:")
+for feature, coef in zip(X.columns, model.coef_):
+    print(f"{feature}: {coef}")
+
+# Intercept
+print("Intercept:", model.intercept_)
