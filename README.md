@@ -60,24 +60,14 @@ This project analyzes district-wise crime data in India from 2001 to 2012 using 
 ---
 ## 📈 Visualizations
 
-### 📊 Murder Trend
-![Murder Trend](IMAGES/"C:\Users\ASUS\Documents\Crime-Analysis-India\IMAGES\Graph1.png.png")
+## 📈 Visualizations
 
-### 📊 Top 10 States with Highest Murders
-![Top States](IMAGES/Graph2.png)
-
-### 📊 Crime Distribution
-![Crime Distribution](IMAGES/Graph3.png)
-
-### 🔥 Correlation Heatmap
-![Heatmap](IMAGES/Heatmap.png)
-
-### 📈 Total IPC Crime Trend
-![IPC Trend](IMAGES/Graph4.png)
-
-### 📉 Outlier Detection
-![Outliers](IMAGES/Outliers.png)
-
+![Murder Trend](./IMAGES/Graph1.png)
+![Top States](./IMAGES/Graph2.png)
+![Crime Distribution](./IMAGES/Graph3.png)
+![Heatmap](./IMAGES/Heatmap.png)
+![IPC Trend](./IMAGES/Graph4.png)
+![Outliers](./IMAGES/Outliers.png)
 ---
 
 ## 📌 Conclusion
