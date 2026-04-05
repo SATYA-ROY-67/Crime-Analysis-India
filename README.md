@@ -50,14 +50,6 @@ This project analyzes district-wise crime data in India from 2001 to 2012 using 
 
 ---
 
-## 📈 Visualizations
-- Line Graph (Murder Trend)  
-- Bar Chart (Top States)  
-- Pie Chart (Crime Distribution)  
-- Heatmap (Correlation Matrix)  
-
----
-
 ## 🧠 Key Insights
 - Uttar Pradesh has highest murder cases  
 - Crime trends fluctuate but remain high  
@@ -69,7 +61,7 @@ This project analyzes district-wise crime data in India from 2001 to 2012 using 
 ## 📈 Visualizations
 
 ### 📊 Murder Trend
-![Murder Trend](IMAGES/graph1.png)
+![Murder Trend](IMAGES/Graph1.png)
 
 ### 📊 Top 10 States with Highest Murders
 ![Top States](IMAGES/Graph2.png)
