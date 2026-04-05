@@ -4,6 +4,11 @@
 
 ---
 
+![Python](https://img.shields.io/badge/Python-Data%20Science-blue)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
+
+---
+
 ## 📌 Project Overview
 This project analyzes district-wise crime data in India from 2001 to 2012 using data science techniques.
 
@@ -50,6 +55,14 @@ This project analyzes district-wise crime data in India from 2001 to 2012 using 
 
 ---
 
+## 📈 Visualizations
+- Line Graph (Murder Trend)  
+- Bar Chart (Top States)  
+- Pie Chart (Crime Distribution)  
+- Heatmap (Correlation Matrix)  
+
+---
+
 ## 🧠 Key Insights
 - Uttar Pradesh has highest murder cases  
 - Crime trends fluctuate but remain high  
@@ -57,17 +70,6 @@ This project analyzes district-wise crime data in India from 2001 to 2012 using 
 - Strong correlation between robbery, theft, and murder  
 - Total IPC crimes show increasing trend  
 
----
-## 📈 Visualizations
-
-## 📈 Visualizations
-
-![Murder Trend](./IMAGES/Graph1.png)
-![Top States](./IMAGES/Graph2.png)
-![Crime Distribution](./IMAGES/Graph3.png)
-![Heatmap](./IMAGES/Heatmap.png)
-![IPC Trend](./IMAGES/Graph4.png)
-![Outliers](./IMAGES/Outliers.png)
 ---
 
 ## 📌 Conclusion
