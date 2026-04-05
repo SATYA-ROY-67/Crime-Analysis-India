@@ -61,7 +61,7 @@ This project analyzes district-wise crime data in India from 2001 to 2012 using 
 ## 📈 Visualizations
 
 ### 📊 Murder Trend
-![Murder Trend](IMAGES/Graph1.png)
+![Murder Trend](IMAGES/"C:\Users\ASUS\Documents\Crime-Analysis-India\IMAGES\Graph1.png.png")
 
 ### 📊 Top 10 States with Highest Murders
 ![Top States](IMAGES/Graph2.png)
