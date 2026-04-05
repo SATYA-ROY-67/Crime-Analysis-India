@@ -73,4 +73,4 @@ This project demonstrates how data science techniques can be used to analyze rea
 ---
 
 ## 👨‍💻 Author
-**Satya**
+**Satyajeet Roy Chaudhary**
