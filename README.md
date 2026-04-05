@@ -63,6 +63,16 @@ This project analyzes district-wise crime data in India from 2001 to 2012 using 
 
 ---
 
+## 🤖 Machine Learning
+
+A Linear Regression model was implemented to predict murder cases based on crime features like rape, robbery, and theft.
+
+### Model Evaluation:
+- R2 Score
+- Mean Absolute Error (MAE)
+
+---
+
 ## 🧠 Key Insights
 - Uttar Pradesh has highest murder cases  
 - Crime trends fluctuate but remain high  
