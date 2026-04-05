@@ -66,6 +66,27 @@ This project analyzes district-wise crime data in India from 2001 to 2012 using 
 - Total IPC crimes show increasing trend  
 
 ---
+## 📈 Visualizations
+
+### 📊 Murder Trend
+![Murder Trend](IMAGES/graph1.png)
+
+### 📊 Top 10 States with Highest Murders
+![Top States](IMAGES/Graph2.png)
+
+### 📊 Crime Distribution
+![Crime Distribution](IMAGES/Graph3.png)
+
+### 🔥 Correlation Heatmap
+![Heatmap](IMAGES/Heatmap.png)
+
+### 📈 Total IPC Crime Trend
+![IPC Trend](IMAGES/Graph4.png)
+
+### 📉 Outlier Detection
+![Outliers](IMAGES/Outliers.png)
+
+---
 
 ## 📌 Conclusion
 This project demonstrates how data science techniques can be used to analyze real-world crime data and extract meaningful insights.
