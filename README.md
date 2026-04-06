@@ -59,7 +59,8 @@ This project analyzes district-wise crime data in India from 2001 to 2012 using 
 - Line Graph (Murder Trend)  
 - Bar Chart (Top States)  
 - Pie Chart (Crime Distribution)  
-- Heatmap (Correlation Matrix)  
+- Heatmap (Correlation Matrix)
+- Linear Regression (Prediction)
 
 ---
 
